@@ -1,0 +1,441 @@
+* {
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+/*--- INICIO ---*/
+header {
+    background-color:white;
+    color:#2196f3;    
+    font-size: solid;
+    padding: 10px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+}
+header img{
+    width: 50px;
+}
+header nav ul li{
+    display: inline-block;
+    list-style: none;    
+}
+header nav{
+    width: 50%;
+    justify-content: space-between;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li a{
+    color:#2196f3;
+    text-decoration: none;
+}
+.nav-link:hover{
+    background-color: blanchedalmond;
+}
+/*---MAIN INICIO---*/
+main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr) ;
+    grid-template-areas: 
+    "portada portada"
+    "prepagas prepagas";
+
+
+    border: 2px solid;
+    border-color: #2196f3;
+    background-image: url(../assets/img/imagen-portada2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.portada{ 
+    grid-area: portada;  
+    height: 50vh;     
+    display: flex;
+    margin: 5px;
+    align-items: center;    
+}
+.portada h1{
+    text-align: center;
+}
+.portada p{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;   
+}
+.portada div{
+    color: rgb(254, 254, 255);
+    font-size: 1rem;
+    background-color: #095cafbb;
+    padding: 20px;        
+}
+.prepagas{
+    grid-area: prepagas;
+    padding: 60px;
+    text-align: center;      
+}
+.prepagas div img{
+    width: 200px;
+    height: 110px;   
+    display: inline;    
+}
+/*---FOOTER INICIO---*/
+footer{
+    height: 15vh;    
+}
+footer iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+}
+.ubicacion div{
+    display: inline-block;
+}
+@media(max-width: 850px){
+    header{
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    header nav{
+        width: 100%;
+    }
+    main{
+    height: 90vh;
+    }
+@media(max-width: 650px){
+    main{
+        height: 155vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portada{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 62vh;
+    }
+    .portada img{
+        padding: 20px;
+    }
+    .prepagas{
+        padding: 240px;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }    
+    footer{
+        height: 5vh;
+    }
+}
+}
+/*---INFO PACIENTES---*/
+/*---MAIN INFO PACIENTES---*/
+.main-info{
+    border: 2px solid;
+    border-color: #2196f3;
+    background-image: url(../assets/img/imagen-portada2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;      
+}
+.main-info div{
+    color: rgb(254, 254, 255);
+    font-size: 1rem;    
+    padding: 10px;       
+}
+.main-info form{
+    background-color: #166cc26c;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.main-info form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-info h1{
+    text-align: center;
+    color: #2196f3;
+    padding: 10px;
+}
+@media(max-width: 450px){
+    .main-info{
+        height: 110vh;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .formulario form{
+        height: 700px;
+    }
+}
+/*---FOOTER INFO PACIENTES---*/
+.footer-info{
+    background-color: rgba(128, 128, 128, 0.534);
+    height: 10vh;
+}
+/*---CONTACTO---*/
+/*---MAIN CONTACTO---*/
+.main-contacto{
+    border: 2px solid;
+    border-color: #2196f3;
+    background-image: url(../assets/img/imagen-contacto.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;    
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+.main-contacto form{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #166cc26c;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+.main-contacto h1{
+    grid-area: titulo;
+    text-align: center;
+    color: white;
+    background-color: #166cc26c;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-contacto div{    
+    color: rgb(254, 254, 255);
+    font-size: 1rem;    
+    padding: 20px;    
+}
+.formulario-contacto form{
+    width: 400px;
+}  
+.formulario-contacto form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+@media(max-width: 450px){
+    .formulario-contacto{
+        width: 100%; 
+    }
+    .formulario-contacto form{
+        width: 250px;
+    } 
+}
+/*---FOOTER CONTACTO---*/
+.footer-contacto{
+    background-color: rgba(128, 128, 128, 0.534);
+    height: 10vh;   
+}
+/*---CALENDARIO DE VACUNACIÓN---*/
+/*---MAIN CALENDARIO---*/
+.main-calendario{
+    height: 200vh;
+    border: 2px solid;
+    border-color: #2196f3;
+    background-image: none;
+    color: #2196f3;
+}
+.main-calendario h1{
+    height: 15vh;
+    grid-area: titulo;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.377);
+    padding: 20px;
+    margin: 10px;
+}
+.inmunización{
+    grid-area: inmu;
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+.inmunización img{
+    width: 100%;
+    margin-top: 20px;
+}
+.inmunización h2,
+.inmunización h4{
+    text-align: center;
+    margin: 10px 0;
+}
+.inmunización p,
+.inmunización form{
+    margin-top: 20px;
+}
+.oms{
+    grid-area: oms;
+    text-align:justify;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    margin-top: 30px;
+}
+.oms h2{
+    text-align: center;
+    margin: 10px;
+}
+.oms img{
+    margin-top: 20px;
+    
+    width: 100%;
+}
+@media(min-width: 650px){
+    .main-calendario{
+        height: 130vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: 0.2fr 1.3fr;
+
+        grid-template-areas: 
+        "titulo titulo"
+        "inmu oms"; 
+        border: 2px solid;
+        border-color:#2196f3
+    }
+    .inmunización{ 
+        justify-content: center;
+    }
+    .oms{
+        justify-content: center;
+    }   
+}
+/*---FOOTER CALENDARIO---*/
+.footer-calendario{
+    background-color: rgba(128, 128, 128, 0.534);
+    height: 10vh;   
+}
+/*---TURNOS---*/
+/*---HEADER TURNOS---*/
+.header-turnos{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-turnos nav{
+    width: 100%;
+}
+.header-turnos nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header-turnos img{
+    text-align: center;
+}
+/*---MAIN TURNOS---*/
+.main-turnos{
+    height: 145vh;
+    background-image: none;
+}
+.main-turnos h1{
+    text-align: center;
+    color:#2196f3
+}
+#turnos div{
+    padding: 20px;
+}
+.consulta{
+    background-color: #2195f365;
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #2196f3;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 350px;
+    margin-top: 5px;
+}
+.consulta h3{
+    text-align: center;
+}
+.consulta img{
+    width: 100%;
+    height: 150px;
+}
+.consulta p{    
+    margin-block: 15px;
+}
+.consulta a{
+    display: inline-block;
+    text-decoration: none;
+    border: solid 3px black;
+    padding: 3px 5px;  
+    background-color: #2196f3;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.consulta a:hover{
+    background-color: rgba(255, 235, 205, 0.308);
+}
+/*---FOOTER TURNOS---*/
+.footer-turnos{
+    background-color: grey;
+    height: 8vh;
+}
+@media(min-width: 650px){
+    .header-turnos{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh
+    }
+    .header-turnos nav{
+        width: 60%;
+    }
+    .main-turnos{
+        height: 80vh;
+    }
+    #turnos{
+        padding: 50px;
+    }
+    #turnos h1{
+        grid-area: turnos;
+    }
+    .tarjetas-consulta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-turnos{
+        height: 10vh;
+    }
+}
+
