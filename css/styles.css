@@ -46,8 +46,6 @@ main{
     grid-template-areas: 
     "portada portada"
     "prepagas prepagas";
-
-
     border: 2px solid;
     border-color: #2196f3;
     background-image: url(../assets/img/imagen-portada2.webp);
@@ -74,6 +72,7 @@ main{
     color: rgb(254, 254, 255);
     font-size: 1rem;
     background-color: #095cafbb;
+    
     padding: 20px;        
 }
 .prepagas{
@@ -189,7 +188,7 @@ footer iframe{
 }
 /*---FOOTER INFO PACIENTES---*/
 .footer-info{
-    background-color: rgba(128, 128, 128, 0.534);
+    background: linear-gradient(rgba(158, 156, 156, 0.63),#2196f3);
     height: 10vh;
 }
 /*---CONTACTO---*/
@@ -209,7 +208,7 @@ footer iframe{
 .main-contacto form{
     margin-left: auto;
     margin-right: auto;
-    background-color: #166cc26c;
+    background-color: #166cc293;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -220,6 +219,7 @@ footer iframe{
     text-align: center;
     color: white;
     background-color: #166cc26c;
+    box-shadow: 10px 10px 10px 5px #2195f3a2;
     margin-left: auto;
     margin-right: auto;
 }
@@ -247,32 +247,30 @@ footer iframe{
 }
 /*---FOOTER CONTACTO---*/
 .footer-contacto{
-    background-color: rgba(128, 128, 128, 0.534);
+    background: linear-gradient(white,#2196f3);
     height: 10vh;   
 }
 /*---CALENDARIO DE VACUNACIÓN---*/
 /*---MAIN CALENDARIO---*/
 .main-calendario{
-    height: 200vh;
+    height: 180vh;
     border: 2px solid;
     border-color: #2196f3;
     background-image: none;
     color: #2196f3;
 }
 .main-calendario h1{
+    background: linear-gradient(#2196f3, white);
     height: 15vh;
     grid-area: titulo;
     text-align: center;
-    background-color: rgba(128, 128, 128, 0.377);
+    color: white;
     padding: 20px;
     margin: 10px;
 }
 .inmunización{
     grid-area: inmu;
     text-align:justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 20px;
     margin-top: 30px;
 }
@@ -292,9 +290,6 @@ footer iframe{
 .oms{
     grid-area: oms;
     text-align:justify;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 20px;
     margin-top: 30px;
@@ -305,7 +300,6 @@ footer iframe{
 }
 .oms img{
     margin-top: 20px;
-    
     width: 100%;
 }
 @media(min-width: 650px){
@@ -314,7 +308,6 @@ footer iframe{
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: 0.2fr 1.3fr;
-
         grid-template-areas: 
         "titulo titulo"
         "inmu oms"; 
@@ -330,7 +323,7 @@ footer iframe{
 }
 /*---FOOTER CALENDARIO---*/
 .footer-calendario{
-    background-color: rgba(128, 128, 128, 0.534);
+    background: linear-gradient(white,#2196f3);
     height: 10vh;   
 }
 /*---TURNOS---*/
@@ -380,6 +373,7 @@ footer iframe{
     justify-content: center;
     height: 350px;
     margin-top: 5px;
+    transition-duration: 0.5s;
 }
 .consulta h3{
     text-align: center;
@@ -404,9 +398,12 @@ footer iframe{
 .consulta a:hover{
     background-color: rgba(255, 235, 205, 0.308);
 }
+.consulta:hover{
+    transform: scale(1.2);
+}
 /*---FOOTER TURNOS---*/
 .footer-turnos{
-    background-color: grey;
+    background: linear-gradient(white,#2196f3);
     height: 8vh;
 }
 @media(min-width: 650px){
