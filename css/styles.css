@@ -40,12 +40,6 @@ header nav ul li a{
 }
 /*---MAIN INICIO---*/
 .main-index{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr) ;
-    grid-template-areas: 
-    "portada portada"
-    "prepagas prepagas";
     border: 2px solid;
     border-color: #2196f3;
     background-image: url(../assets/img/imagen-portada2.webp);
@@ -72,11 +66,11 @@ header nav ul li a{
     color: rgb(254, 254, 255);
     font-size: 1rem;
     background-color: #095cafbb;
-    
+    margin-top: auto;
     padding: 20px;        
 }
 .prepagas{
-    grid-area: prepagas;
+    margin-top: 100px;
     padding: 60px;
     text-align: center;      
 }
@@ -109,36 +103,11 @@ footer iframe{
         width: 100%;
     }
     .main-index{
-    height: 90vh;
-    }
-@media(max-width: 650px){
-    .main-index{
-        height: 155vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .portada{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 62vh;
-    }
-    .portada img{
-        padding: 20px;
+    height: 130vh;
     }
     .prepagas{
-        padding: 240px;
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }    
-    footer{
-        height: 5vh;
+        margin-top: 240px;
     }
-}
 }
 /*---INFO PACIENTES---*/
 /*---MAIN INFO PACIENTES---*/
@@ -310,43 +279,6 @@ footer iframe{
         height: max-content;
     }
 }
-/*
-@media(max-width: 768px){
-    .main-calendario{
-        height: 220vh;
-    }
-    .main-calendario div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .inmunización{
-        width: 100%;
-    }
-}
-
-@media(min-width: 650px){
-    .main-calendario{
-        height: 130vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: 0.2fr 1.3fr;
-        grid-template-areas: 
-        "titulo titulo"
-        "inmu oms"; 
-        border: 2px solid;
-        border-color:#2196f3
-    }
-    .inmunización{ 
-        justify-content: center;
-    }
-    .oms{
-        justify-content: center;
-    }   
-}
-*/
-
-
 /*---FOOTER CALENDARIO---*/
 .footer-calendario{
     background: linear-gradient(white,#2196f3);

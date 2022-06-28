@@ -9,51 +9,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Inicio</title>
 </head>
- <body>
-  <header>       
-    <!---Logo-->
-      <img src="./assets/img/etetoscopio.logo.png" alt="etetoscopio.logo">      
-      <nav> 
-        <ul>
-            <li><a class="nav-link" href="index.html">Inicio</a></li>
-            <li><a class="nav-link" href="./pages/infopacientes.html">Info Pacientes</a></li>
-            <li><a class="nav-link" href="./pages/calendario.html">Calendario Vacunación</a></li>
-            <li><a class="nav-link" href="./pages/turnos.html">Turnos</a></li>
-            <li><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>    
-  </header>
-  <main class="main-index">
-    <section class="portada">
-      <div>
-        <h1>
-          <strong>Dra. Andrea Virginia Grieco</strong>
-        </h1>
-        <p>
-        <strong>Médica:</strong> Otorgado por la Universidad de Buenos Aires (1988) - Diploma de Honor
-        </p>
-        <p>
-        <strong>Especialista en Pediatría:</strong> Otorgado por el Ministerio de Salud de la Nación (1992). Revalidado por la Sociedad Argentina de Pediatría y la Facultad de Medicina de la Universidad de Buenos Aires
-        </p>
-        <p>
-        <strong>Especialista en Adolescencia:</strong> Otorgado por la Sociedad Argentina de Pediatría (2013). Recertificado año 2018 Sociedad Argentina de Pediatría. Otorgado por la Academia Nacional de Medicina.            
-        </p>
-      </div>       
-      <img src="./assets/img/imagen-dragrieco.png" style="float:right; padding-left:15px" width="230px" height="230px" alt="imagen-dragrieco">         
-    </section>
+<body>
+<header>       
+  <!---Logo-->
+  <img src="./assets/img/etetoscopio.logo.png" alt="etetoscopio.logo">      
+  <nav> 
+    <ul>
+      <li><a class="nav-link" href="index.html">Inicio</a></li>
+      <li><a class="nav-link" href="./pages/infopacientes.html">Info Pacientes</a></li>
+      <li><a class="nav-link" href="./pages/calendario.html">Calendario Vacunación</a></li>
+      <li><a class="nav-link" href="./pages/turnos.html">Turnos</a></li>
+      <li><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>    
+</header>
+
+
+
+
+<main class="main-index">
+  <section class="portada">
+    <div class="row">
+      <div class="col col-sm-12 col-md-12 col-lg-9">
+        <h1><strong>Dra. Andrea Virginia Grieco</strong></h1>
+        <p><strong>Médica:</strong> Otorgado por la Universidad de Buenos Aires (1988) - Diploma de Honor</p>
+        <p><strong>Especialista en Pediatría:</strong> Otorgado por el Ministerio de Salud de la Nación (1992). Revalidado por la Sociedad Argentina de Pediatría y la Facultad de Medicina de la Universidad de Buenos Aires.</p>
+        <p><strong>Especialista en Adolescencia:</strong> Otorgado por la Sociedad Argentina de Pediatría (2013). Recertificado año 2018 Sociedad Argentina de Pediatría. Otorgado por la Academia Nacional de Medicina.</p>
+      </div>
+      <div class="col-lg-3 d-flex justify-content-center"> 
+        <img src="./assets/img/imagen-dragrieco.png" style="float:right; padding-left:15px" width="230px" height="230px" alt="imagen-dragrieco">
+      </div>  
+    </div>
+  </section>
     <!--Prepagas y Obras Sociales-->  
-    <section class="prepagas">      
-      <div>    
-        <img src="./assets/img/osde-logo-2020.png" alt="logo-osde">
-        <img src="./assets/img/logo-omint.png" alt="logo-omint">
-        <img src="./assets/img/logo-hope.png" alt="logo-hope">
-        <img src="./assets/img/logo-medicus.png" alt="logo-medicus">
-        <form>
-          <a href="pages/infopacientes.html">        
-          <input type="button" value="Formulario Nuevo Paciente">
-          </a>
-        </form>
-      </div> 
+    <section class="prepagas">
+      <div class="row">      
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">    
+          <img src="./assets/img/osde-logo-2020.png" alt="logo-osde">
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <img src="./assets/img/logo-omint.png" alt="logo-omint">
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <img src="./assets/img/logo-hope.png" alt="logo-hope">
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <img src="./assets/img/logo-medicus.png" alt="logo-medicus">
+        </div>
+        <div class="col-12">
+          <form>
+            <a href="pages/infopacientes.html">        
+            <input type="button" value="Formulario Nuevo Paciente">
+            </a>
+          </form>
+        </div> 
+      </div>   
     </section>
   </main>
   <footer>
