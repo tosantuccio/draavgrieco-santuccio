@@ -39,7 +39,7 @@ header nav ul li a{
     background-color: blanchedalmond;
 }
 /*---MAIN INICIO---*/
-main{
+.main-index{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr) ;
@@ -108,11 +108,11 @@ footer iframe{
     header nav{
         width: 100%;
     }
-    main{
+    .main-index{
     height: 90vh;
     }
 @media(max-width: 650px){
-    main{
+    .main-index{
         height: 155vh;
         display: flex;
         flex-direction: column;
@@ -252,31 +252,32 @@ footer iframe{
 }
 /*---CALENDARIO DE VACUNACIÓN---*/
 /*---MAIN CALENDARIO---*/
-.main-calendario{
-    height: 180vh;
-    border: 2px solid;
-    border-color: #2196f3;
-    background-image: none;
-    color: #2196f3;
-}
-.main-calendario h1{
+
+.titulo{
     background: linear-gradient(#2196f3, white);
     height: 15vh;
-    grid-area: titulo;
     text-align: center;
     color: white;
     padding: 20px;
     margin: 10px;
 }
+.main-calendario{
+    height: 150vh;
+    background-image: none;
+    color: #2196f3;
+}
+.main-calendario div{
+    display: flex;
+    flex-direction: row;
+}
 .inmunización{
-    grid-area: inmu;
     text-align:justify;
     padding: 20px;
-    margin-top: 30px;
+    
 }
 .inmunización img{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 .inmunización h2,
 .inmunización h4{
@@ -288,11 +289,9 @@ footer iframe{
     margin-top: 20px;
 }
 .oms{
-    grid-area: oms;
     text-align:justify;
     width: 100%;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 20px;  
 }
 .oms h2{
     text-align: center;
@@ -302,6 +301,30 @@ footer iframe{
     margin-top: 20px;
     width: 100%;
 }
+.oms iframe{
+   margin-top: 20px;
+   width: 100%;
+}
+@media(max-width: 768px){
+    .main-calendario{
+        height: max-content;
+    }
+}
+/*
+@media(max-width: 768px){
+    .main-calendario{
+        height: 220vh;
+    }
+    .main-calendario div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inmunización{
+        width: 100%;
+    }
+}
+
 @media(min-width: 650px){
     .main-calendario{
         height: 130vh;
@@ -321,6 +344,9 @@ footer iframe{
         justify-content: center;
     }   
 }
+*/
+
+
 /*---FOOTER CALENDARIO---*/
 .footer-calendario{
     background: linear-gradient(white,#2196f3);

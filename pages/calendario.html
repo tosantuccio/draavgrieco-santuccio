@@ -5,11 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Calendario Vacunación</title>
 </head>
 <body>
+    <header>
+        <img src="../assets/img/etetoscopio.logo.png" alt="etetoscopio.logo">
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="./infopacientes.html">Info Pacientes</a></li>
+                <li><a class="nav-link" href="./turnos.html">Turnos</a></li>
+                <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main class="main-calendario">
+        <h1 class="container-fluid titulo">Calendario de Vacunación</h1>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-7">
+                    <article class="container-sm inmunización" data-aos="fade-up">
+                        <h2>Inmunización</h2>
+                            <h4><i>Las Vacunas son el método mas seguro que hay en el mundo para proteger a los niños de enfermedades mortales</i></h4>
+                        <p>Las vacunas constituyen uno de los avances más importantes en materia de salud y desarrollo a nivel mundial. Durante más de dos siglos, las vacunas han reducido de manera segura el flagelo de enfermedades como la poliomielitis, el sarampión y la viruela, y han ayudado a los niños a crecer sanos y felices. Las vacunas salvan más de cinco vidas cada minuto, de modo que, ya antes de la llegada de la COVID-19, han evitado hasta tres millones de muertes al año.</p>
+                        <form>
+                            <a href="https://www.buenosaires.gob.ar/sites/gcaba/files/carnet-vacunacion-web-2022.png" target="_blank"><input type="button" value="Calendario de Vacunación"></a>
+                        </form>
+                        <img src="../assets/img/inmu.webp" alt="">
+                    </article>
+                </div>
+                <div class="col-12 col-sm-12 col-md-5">
+                    <article class="container-sm oms" data-aos="fade-up">
+                        <h2><i>Organización Mundial de la Salud</i></h2>
+                        <p>En 2019, la Organización Mundial de la Salud (OMS) declaró que el recelo ante las vacunas constituye una de las principales amenazas para la salud pública. Aunque la renuencia frente a las vacunas es tan antigua como la propia vacunación, la naturaleza de este problema continúa cambiando en función del panorama social. Actualmente, el recelo ante las vacunas y la consiguiente “infodemia” que genera son las principales causas de que personas de todo el mundo no reciban las vacunas suficientes.</p>
+                        <img src="../assets/img/oms.webp" alt="">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3cYqcm6Ek8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+                </div>
+            </div>
+    </main>
+    <footer class="footer-calendario">
+        <div>
+            <a href="https://www.instagram.com/" target="_blank" ><img src="../assets/img/icons8-instagram-48.png" target="_blank" alt="logo-instagram"></a>
+            <a href="https://es-la.facebook.com/" target="_blank" > <img src="../assets/img/icons8-facebook-48.png" alt="logo-facebook"></a>
+        </div>   
+    </footer> 
+
+    <!--
     <header class="header-calendario">
         <img src="../assets/img/etetoscopio.logo.png" alt="etetoscopio.logo">
         <nav>
@@ -45,9 +89,10 @@
             <a href="https://es-la.facebook.com/" target="_blank" > <img src="../assets/img/icons8-facebook-48.png" alt="logo-facebook"></a>
         </div>   
     </footer> 
+      
+    -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>  
+    <script>AOS.init();</script>
+    <script src="./js/bootstrap.js"></script>
 </body>
 </html>
