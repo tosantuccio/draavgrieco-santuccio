@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Contacto</title>
@@ -11,40 +12,57 @@
 <body>
     <header class="header-contacto">
         <img src="../assets/img/etetoscopio.logo.png" alt="etetoscopio.logo">
-        <nav>
+         <nav>
             <ul>
                 <li><a class="nav-link" href="../index.html">Inicio</a></li>
                 <li><a class="nav-link" href="./infopacientes.html">Info Pacientes</a></li>
                 <li><a class="nav-link" href="./calendario.html">Calendario de Vacunación</a></li>
                 <li><a class="nav-link" href="./turnos.html">Turnos</a></li>
             </ul>
-        </nav>              
+        </nav>                  
     </header>
-    <main class="main-contacto">
-        <div>
-            <h1>Contacto</h1>
-        </div>
-        <div class="formulario-contacto">   
-            <form>
-                <div>
-                    <label for="campo-nombre">Nombre y Apellido:</label>
-                    <input type="text" id="campo-nombre" placeholder="Nombre y apellido" required>
-                </div>
-                <div>
-                    <label for="campo-mail">Email:</label>
-                    <input type="mail" id="campo-mail" placeholder="xxx@xxx.com.ar" required>
-                </div>
-                <div>
-                    <label for="campo-telefono">Teléfono:</label>
-                    <input type="tel" id="campo-telefono" placeholder="Tel/Cel" required>
-                </div>
-                <div>
-                    <label for="campo-consulta">Consulta:</label>
-                    <textarea name="consulta" id="campo-consulta" cols="30" rows="10"></textarea>
-                </div>
-                <input type="submit">
-                <input type="reset">            
-            </form>  
+    <main class="main-contacto">             
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-6">
+             <div class="formulario-contacto">
+                <h1>Contacto</h1>   
+                <form>
+                    <div class="mb-3">
+                        <label for="campo-nombre" class="form-label">Nombre y Apellido:</label>
+                        <input type="text" class="form-control" id="campo-nombre" placeholder="Nombre y apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="campo-mail" class="form-label">Email:</label>
+                        <input type="mail" class="form-control" id="campo-mail" placeholder="xxx@xxx.com.ar" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="campo-telefono" class="form-label">Teléfono:</label>
+                        <input type="tel" class="form-control" id="campo-telefono" placeholder="Tel/Cel" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="campo-consulta" class="form-label">Consulta:</label>
+                        <textarea class="form-control" name="consulta" id="campo-consulta" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="col-auto">
+                    <input type="submit" class="btn btn-primary">
+                    <input type="reset" class="btn btn-primary">
+                </div>            
+                </form>  
+             </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6">
+             <div class="atencion-contacto">
+                <h1>Horarios de Atención</h1>
+                <p>Consultorio: Lunes y Viernes de 12 a 18hs</p>
+                <p>Consulta Virtual: Miércoles de 13 a 16hs</p>
+                <p>Aristóbulo del Valle 1200, Barracas, Capital Federal
+                </p>
+                <p>4361-4444 - draavgrieco@yahoo.com.ar</p>
+                
+             </div>
+            </div>
+
         </div>
     </main>
     <footer class="footer-contacto">
@@ -54,5 +72,6 @@
             <a href="https://es-la.facebook.com/" target="_blank" > <img src="../assets/img/icons8-facebook-48.png" alt="logo-facebook"></a>
         </div>
     </footer>
+    <script src="./js/bootstrap.js"></script>
 </body>
 </html>
