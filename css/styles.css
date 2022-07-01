@@ -40,15 +40,14 @@ header nav ul li a{
 }
 /*---MAIN INICIO---*/
 .main-index{
-    border: 2px solid;
-    border-color: #2196f3;
-    background-image: url(../assets/img/imagen-portada2.webp);
+    /* border: 2px solid;
+    border-color: #2196f3; */
+    background-image: url(../assets/img/portada.imagen.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; 
 }
-.portada{ 
-    grid-area: portada;  
+.portada{  
     height: 50vh;     
     display: flex;
     margin: 5px;
@@ -56,16 +55,18 @@ header nav ul li a{
 }
 .portada h1{
     text-align: center;
+    color: #2196f3;
 }
 .portada p{
     padding: 10px;
     margin: 5px;
-    text-align: center;   
+    text-align:justify;
+    /* background-color: #2195f381;
+    border-radius: 5px;    */
 }
 .portada div{
-    color: rgb(254, 254, 255);
+    color:black;
     font-size: 1rem;
-    background-color: #095cafbb;
     margin-top: auto;
     padding: 20px;        
 }
@@ -79,18 +80,8 @@ header nav ul li a{
     height: 110px;   
     display: inline;    
 }
-/*---FOOTER INICIO---*/
-footer{
-    height: 15vh;    
-}
-footer iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-}
-.ubicacion div{
-    display: inline-block;
+.prepagas form button{
+    margin: 30px;
 }
 @media(max-width: 850px){
     header{
@@ -337,7 +328,7 @@ footer iframe{
     justify-content: center;
     height: 425px;
     margin-top: 5px;
-    transition-duration: 0.1s;
+    transition-duration: 250ms;
 }
 .consulta h3{
     text-align: center;
