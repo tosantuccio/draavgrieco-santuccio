@@ -13,14 +13,21 @@
 <body>
     <header class="header-turnos">
         <img src="../assets/img/etetoscopio.logo.png" alt="etetoscopio.logo">
-        <nav>
-            <ul>
-                <li><a class="nav-link" href="../index.html">Inicio</a></li>
-                <li><a class="nav-link" href="./infopacientes.html">Info Pacientes</a></li>
-                <li><a class="nav-link" href="./calendario.html">Calendario de Vacunación</a></li>
-                <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./infopacientes.html">Info Pacientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./calendario.html">Calendario de Vacunación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
     </header>
     <main class="main-turnos">
         <section id="turnos">
@@ -64,12 +71,20 @@
             </div>   
         </section>
     </main>
-    <footer class="footer-turnos">
-        <div>    
-            <a href="https://www.instagram.com/" target="_blank" ><img src="../assets/img/icons8-instagram-48.png" target="_blank" alt="logo-instagram"></a>
-            <a href="https://es-la.facebook.com/" target="_blank"> <img src="../assets/img/icons8-facebook-48.png" alt="logo-facebook"></a>
-        </div>        
-    </footer> 
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="text-muted">&copy; 2022 Dra. Andrea V. Grieco</span>
+          </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a href="https://www.instagram.com/" target="_blank" ><img src="../assets/img/icons8-instagram-48.png" target="_blank" alt="logo-instagram"></a></li>
+            <li class="ms-3"><a href="https://es-la.facebook.com/" target="_blank"> <img src="../assets/img/icons8-facebook-48.png" alt="logo-facebook"></a></li>
+          </ul>
+        </footer>
+      </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script> 
     <script src="./js/bootstrap.js"></script>  
