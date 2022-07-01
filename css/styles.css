@@ -91,7 +91,7 @@ header img{
     background-image: url(../assets/img/imagen-portada2.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position:center center;
     height: 160vh;
     display: flex;
     flex-direction: column;      
@@ -195,7 +195,7 @@ header img{
     margin: 10px;
 }
 .main-calendario{
-    height: 150vh;
+    height: 130vh;
     background-image: none;
     color: #2196f3;
 }
@@ -263,6 +263,9 @@ header img{
     text-align: center;
     color:#2196f3
 }
+#turnos{
+    height: max-content
+}
 #turnos div{
     padding: 20px;
 }
@@ -323,29 +326,22 @@ header img{
         align-items: center;
         height: 10vh
     }
-    .header-turnos nav{
-        width: 60%;
-    }
     .main-turnos{
-        height: 90vh;
+        height: max-content;
     }
     #turnos{
         padding: 50px;
-    }
-    .tarjetas-consulta{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .col-lg-4{
         display: flex;
         justify-content: center;
-        text-align: center;
-        align-items: center;
     }
-    .footer-turnos{
-        height: 10vh;
+    #turnos div{
+        margin: 10px
+    }
+    #turnos div iframe{
+        width:max-content;
+    }
+    #turnos h5{
+        color: #2196f3;
     }
 }
 
