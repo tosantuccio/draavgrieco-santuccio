@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -30,9 +31,10 @@
     </header>
     <main class="main-info">
         <div>
-            <h1 class="titulo-info"><strong>Formulario Nuevo Paciente</strong></h1>
+            <h1><strong>Formulario Nuevo Paciente</strong></h1>
         </div>
-        <div class="formulario">
+        <div class="row">
+         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario" data-aos="zoom-in-right">          
             <form>
                 <div class="mb-3">
                     <label for="campo-nombre" class="form-label">Nombre y Apellido:</label>
@@ -64,14 +66,6 @@
                     <label for="campo-telefono" class="form-label">Teléfono:</label>
                     <input type="tel" class="form-control" id="campo-telefono" placeholder="Tel/Cel" required>
                 </div>
-                <div class="mb-3">
-                    <label for="campo-nombre--mpt" class="form-label">Nombre Mamá/Papá/Tutor:</label>
-                    <input type="text" class="form-control" id="campo-nombre--mpt">
-                </div>
-                <div class="mb-3">
-                    <label for="campo-telefono" class="form-label">Teléfono:</label>
-                    <input type="tel" class="form-control" id="campo-telefono" placeholder="Tel/Cel" required>
-                </div>
                 <div>
                     <label for="campo-antecedentes">Antecedentes/Internaciones previas:</label>
                     <textarea name="Antecedentes" id="campo-antecedentes" cols="60" rows="2"></textarea>
@@ -83,7 +77,36 @@
                 <input type="submit">
                 <input type="reset">      
             </form>
-        </div>
+         </div>
+         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" data-aos="zoom-in-left">
+          <article class="primera-consulta">
+            <h3>La Primera Consulta</h3>
+            <p>Una vez que el bebé es dado de alta y ya está en su hogar, los padres deben programar con el pediatra su primera visita al consultorio, que suele realizarse entre el 4º y 7º día de vida.
+            <br>
+            <br>     
+            En ella, el médico verifica los datos proporcionados por el servicio de neonatología del hospital o maternidad donde nació el bebé y corrobora que coincidan con lo que ve en el recién nacido a partir de una serie de revisaciones físicas:
+            <br>
+            <br>  
+            -Se verifica el ritmo cardíaco; el peso y la medida del bebé así como también el peso, la longitud y el perímetro de su cabeza. <br>
+            -Se palpa la fontanela (espacio blando que está en el cráneo antes de formarse el hueso) <br>
+            <br>
+            -Se revisan las extremidades, los genitales, la morfología de la boca y los oídos, para constatar que no presenten complejidades o alteraciones. <br>
+            <br>
+            -Se revisa también el ombligo, indicándole a los padres cómo deben aplicar el alcohol para que el cordón umbilical se seque correctamente. <br>
+            <br>  
+            -El pediatra observa además los reflejos del bebé, los movimientos de cadera y su columna. <br> 
+            <br> 
+            -Se revisa la mirada: algunos pediatras observan con una linterna el reflejo rojo del bebé (estudio que luego profundiza el oftalmólogo).
+            <br>
+            <br>  
+            En esta primera visita, los aspectos físicos son muy importantes, sin embargo, el pediatra también está atento a otros puntos que tienen que ver con el ritmo de alimentación del bebé, su rutina de sueño, el llanto y otros comportamientos. Para esto, los papás tienen que asistir al consultorio con toda la información posible y todas las dudas que consideren necesario despejar, ya que son ellos los primeros en observar al bebé y los encargados de transmitirle cada detalle al médico.
+            <br>
+            <br>  
+            Las vacunas, la lactancia y la prevención de accidentes, son otros de los temas que se tratan en esta primera consulta que sirve para tranquilizar a los papás, quienes también pueden volcar en ella todos sus miedos e incertidumbres acerca de la crianza de su bebé.
+            </p>
+          </article>
+         </div>
+        </div> 
     </main>
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -99,6 +122,8 @@
           </ul>
         </footer>
       </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>AOS.init();</script>
     <script src="./js/bootstrap.js"></script>       
 </body>
 </html>

@@ -37,7 +37,7 @@ header img{
 }
 .portada h1{
     text-align: center;
-    color: #2196f3;
+    color: #0a0272;
 }
 .portada p{
     padding: 10px;
@@ -45,13 +45,17 @@ header img{
     text-align:justify;
 }
 .portada div{
-    color:black;
+    background-color: #2195f349;
+    color:#0a0272;
     font-size: 1rem;
     margin-top: auto;
     padding: 20px;        
 }
+.portada div img{
+    height: 250px;
+}
 .prepagas{
-    margin-top: 100px;
+    margin-top: 150px;
     padding: 60px;
     text-align: center;      
 }
@@ -65,7 +69,7 @@ header img{
 }
 @media(max-width: 850px){
     header{
-        height: 18vh;
+        height: 20vh;
         display: flex;
         flex-direction: column;
         align-items:center;
@@ -77,12 +81,12 @@ header img{
     height: auto;
     }
     .prepagas{
-        margin-top: 240px;
+        margin-top: 280px;
     }
 }
 @media(max-width: 450px){
     .prepagas{
-        margin-top: 450px;
+        margin-top: 460px;
     }
 }
 /*---INFO PACIENTES---*/
@@ -92,7 +96,7 @@ header img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center center;
-    height: 160vh;
+    height: auto;
     display: flex;
     flex-direction: column;      
 }
@@ -118,15 +122,29 @@ header img{
     color: #2196f3;
     padding: 10px;
 }
+.primera-consulta{
+    background-color: #2195f398;
+    color: white;
+    padding: 20px;
+    width: auto;
+}
+.primera-consulta h3{
+    text-align: center;
+}
+.primera-consulta p{
+    margin: 20px;
+    text-align: justify;
+}
+
 @media(max-width: 450px){
     .main-info{
-        height: 130vh;
+        height: auto;
     }
     .formulario{
         width: 100%;
     }
     .formulario form{
-        height: 1060px;
+        height: 850px;
     }
 }
 /*---CONTACTO---*/
@@ -195,7 +213,7 @@ header img{
     margin: 10px;
 }
 .main-calendario{
-    height: 130vh;
+    height: 140vh;
     background-image: none;
     color: #2196f3;
 }
@@ -263,8 +281,9 @@ header img{
     text-align: center;
     color:#2196f3
 }
-#turnos{
-    height: max-content
+#turnos h5{
+    height: max-content;
+    color: #2196f3;
 }
 #turnos div{
     padding: 20px;
@@ -308,6 +327,10 @@ header img{
 .consulta:hover{
     transform: scale(1.1);
 }
+#turnos div iframe{
+    width:max-content;
+
+}
 @media(max-width: 650px){
     .main-turnos{
         height: auto;
@@ -339,9 +362,6 @@ header img{
     }
     #turnos div iframe{
         width:max-content;
-    }
-    #turnos h5{
-        color: #2196f3;
     }
 }
 
