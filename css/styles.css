@@ -368,4 +368,10 @@ header img{
         width:max-content;
     }
 }
-
+@media(max-width: 550px){
+    #turnos div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
