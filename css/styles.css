@@ -86,7 +86,7 @@ header img{
 }
 @media(max-width: 450px){
     .prepagas{
-        margin-top: 460px;
+        margin-top: 550px;
     }
 }
 /*---INFO PACIENTES---*/
@@ -333,7 +333,8 @@ header img{
 }
 @media(max-width: 650px){
     .main-turnos{
-        height: auto;
+        height: max-content;
+        margin-top: 20px;
     }
     .tarjetas-consulta{
         display: flex;
