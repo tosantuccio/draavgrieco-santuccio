@@ -1,0 +1,14 @@
+.tarjeta{
+    color: $color-principal;
+    height: 200px;
+    &_imagen{
+        width: 100%;
+    }
+    &_titulo{
+        text-align: center;
+        font-size: 2rem;
+    }
+    &_texto{
+        font-size: 1rem;
+    }
+}
