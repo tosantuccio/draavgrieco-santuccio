@@ -1,0 +1,27 @@
+header {
+    background-color:white;
+    color: $color-principal;    
+    font-size: solid;
+    padding: 10px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 50px;
+    }   
+}
+ul {
+    list-style: none;
+    li {
+        display: inline-block;
+        .nav-link {
+            text-decoration: none;
+            color: $color-principal;
+            &:hover {
+                background-color: blanchedalmond;
+            }
+        }
+    }
+}

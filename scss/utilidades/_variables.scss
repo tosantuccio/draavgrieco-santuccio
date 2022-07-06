@@ -1,2 +1,16 @@
 $color-principal: #2196f3;
 $color-secundario: #0a0272;
+$color-background: #2195f349;
+
+/*Mixin*/
+@mixin flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}

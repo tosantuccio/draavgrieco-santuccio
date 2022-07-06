@@ -4,10 +4,7 @@ header {
     font-size: solid;
     padding: 10px;
     height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flexRow;
     img{
         width: 50px;
     }   
@@ -46,7 +43,7 @@ ul {
         text-align:justify;  
     }
     div{
-        background-color: #2195f349;
+        background-color: $color-background;
         color: $color-secundario;
         font-size: 1rem;
         margin-top: auto;
@@ -68,9 +65,7 @@ ul {
 @media(max-width: 850px){
     header{
         height: 20vh;
-        display: flex;
-        flex-direction: column;
-        align-items:center;
+        @include flexColumn;
         nav{
             width: 100%;
         }
