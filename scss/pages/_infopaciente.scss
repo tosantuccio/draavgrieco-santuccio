@@ -9,14 +9,15 @@
         padding: 10px;
     }
     form{
-        background-color: $color-secundario;
+        background-color: #03548ac5;
         max-width: fit-content;
         margin-left: auto;
         margin-right: auto;
         padding: 10px;
     }
     form div{
-        @include flexColumn
+        display: flex;
+        flex-direction: column;
     }
     h1{
         text-align: center;

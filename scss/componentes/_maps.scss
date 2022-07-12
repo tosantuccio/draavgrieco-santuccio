@@ -1,0 +1,16 @@
+$info: (
+    Enviar: #2196f3,
+    Limpiar: #04BBBF,
+);
+.botonEnviar{
+    color: map-get($map: $info, $key: Enviar);
+}
+.botonLimpiar{
+     color: map-get($info, Limpiar)
+}
+
+// @each $btn, $color in $info {
+//     .boton#{$btn} {
+//         color: $color
+//     }
+// }

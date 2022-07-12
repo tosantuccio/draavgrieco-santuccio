@@ -2,7 +2,6 @@ $color-principal: #2196f3;
 $color-secundario: #0a0272;
 $color-background: #2195f349;
 
-/*Mixin*/
 @mixin flexRow{
     display: flex;
     flex-direction: row;
@@ -18,4 +17,15 @@ $color-background: #2195f349;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+@mixin fontSize($size, $weight){
+    font-size: $size;
+    font-weight: $weight;
+
+}
+.letraChica {
+    @include fontSize(1rem, 100);
+}
+.letraMediana {
+    @include fontSize(1.5rem, 400);
 }

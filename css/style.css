@@ -1,5 +1,45 @@
 @charset "UTF-8";
-/*Mixin*/
+.letraChica {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.letraMediana {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.boton, .botonCeleste, .botonVerde, .botonAzul {
+  background-color: #2196f3;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.boton:hover, .botonCeleste:hover, .botonVerde:hover, .botonAzul:hover {
+  background-color: blanchedalmond;
+}
+
+.botonAzul {
+  background-color: #03558A;
+}
+
+.botonVerde {
+  background-color: #007D8C;
+}
+
+.botonCeleste {
+  background-color: #04BBBF;
+}
+
+.botonEnviar {
+  color: #2196f3;
+}
+
+.botonLimpiar {
+  color: #04BBBF;
+}
+
 header {
   background-color: white;
   color: #2196f3;
@@ -110,7 +150,7 @@ ul li .nav-link:hover {
   padding: 10px;
 }
 .main-info form {
-  background-color: #0a0272;
+  background-color: rgba(3, 84, 138, 0.7725490196);
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -119,7 +159,6 @@ ul li .nav-link:hover {
 .main-info form div {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .main-info h1 {
   text-align: center;

@@ -1,0 +1,22 @@
+.boton {
+    background-color: $color-principal;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    &:hover {
+        background-color: blanchedalmond;
+    }
+}
+.botonAzul {
+    @extend .boton;
+    background-color: #03558A;
+}
+.botonVerde {
+    @extend .boton;
+    background-color: #007D8C;
+}
+.botonCeleste {
+    @extend .boton;
+    background-color: #04BBBF;
+}
