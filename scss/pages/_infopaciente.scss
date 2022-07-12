@@ -1,0 +1,50 @@
+.main-info{
+    background-image: url(../assets/img/imagen-portada2.webp);
+    @include backImage;
+    height: auto;
+    @include flexColumn;
+    div{
+        color: rgb(254, 254, 255);
+        font-size: 1rem;    
+        padding: 10px;
+    }
+    form{
+        background-color: $color-secundario;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    form div{
+        @include flexColumn
+    }
+    h1{
+        text-align: center;
+        color: $color-principal;
+        padding: 10px; 
+    }      
+}
+.primera-consulta{
+    background-color: $color-principal;
+    color: white;
+    padding: 20px;
+    width: auto;
+    h3{
+        text-align: center;
+    }
+    p{
+        margin: 20px;
+        text-align: justify;
+    }
+}
+@media(max-width: 450px){
+    .main-info{
+        height: auto;
+    }
+    .formulario{
+        width: 100%;
+        form{
+            height: 850px;
+        }
+    }
+}    

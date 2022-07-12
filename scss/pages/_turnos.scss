@@ -1,0 +1,63 @@
+.header-turnos{
+    height: 22vh;
+    @include flexColumn;
+    img{
+        text-align: center;  
+    }
+}
+.main-turnos{
+    height: 150vh;
+    background-color: #DCE2F2;
+    background-image: none;
+    h1{
+        text-align: center;
+        color: $color-principal;
+    }
+}
+#turnos{
+    h5{
+        height: max-content;
+        color: $color-principal;  
+    }
+    div{
+        padding: 20px; 
+    }
+    div iframe{
+        width:max-content;  
+    }
+}
+@media(max-width: 650px){
+    .main-turnos{
+        height: max-content;
+        margin-top: 20px;
+    }
+    .tarjetas-consulta{
+        @include flexColumn;
+        align-items: center;
+    }
+}
+@media(min-width: 650px){
+    .header-turnos{
+        @include flexRow;
+        height: 10vh
+    }
+    .main-turnos{
+        height: max-content;
+    }
+    #turnos{
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        div{
+            margin: 10px 
+        }
+        div iframe{
+            width:max-content;
+        }
+    }
+}
+@media(max-width: 550px){
+    #turnos div{
+        @include flexColumn
+    }
+}

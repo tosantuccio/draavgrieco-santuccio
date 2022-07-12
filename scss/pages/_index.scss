@@ -24,9 +24,7 @@ ul {
 }
 .main-index{
     background-image: url(../assets/img/portada.imagen.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
+    @include backImage;
 }
 .portada{
     height: 50vh;     
@@ -82,3 +80,4 @@ ul {
         margin-top: 550px;
     }
 }
+

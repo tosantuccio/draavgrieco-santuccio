@@ -1,0 +1,55 @@
+.titulo{
+    background: linear-gradient($color-principal, white);
+    height: 15vh;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+.main-calendario{
+    height: 140vh;
+    background-image: none;
+    color: $color-principal;
+    div{
+        display: flex;
+        flex-direction: row;
+    }
+}
+.inmunización{
+    text-align:justify;
+    padding: 20px;
+    img{
+        width: 100%;
+        margin-top: 60px;
+    }
+    h2,h4{
+        text-align: center;
+        margin: 10px 0;
+    }
+    p,form{
+        margin-top: 20px;
+    }
+    
+}
+.oms{
+    text-align:justify;
+    width: 100%;
+    padding: 20px;
+    h2{
+        text-align: center;
+        margin: 10px; 
+    }
+    img{
+        margin-top: 20px;
+        width: 100%;
+    }
+    iframe{
+        margin-top: 20px;
+        width: 100%;
+    }  
+}
+@media(max-width: 768px){
+    .main-calendario{
+        height: max-content;
+    }
+}

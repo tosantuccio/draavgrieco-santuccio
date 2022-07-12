@@ -1,0 +1,58 @@
+.main-contacto{
+    height: 100vh;
+    color:white;
+    font-size: 1rem;
+}
+.formulario-contacto{
+    margin: 60px;
+    height: 650px;
+    h1{
+        text-align: center;
+        color: $color-principal;
+        margin-top: 20px; 
+    }
+    form{
+        color: $color-principal;
+        width: 400px;
+        padding: 30px;
+        margin: auto;
+    }
+    input{
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 2px; 
+    }
+}
+.atencion-contacto{
+    background-color: $color-principal;
+    height: 650px;
+    margin: 60px;
+    padding: 10px;
+    color: white;
+    h1{
+        color: white;
+        text-align:center;
+        margin-top: 20px; 
+    }
+    p{
+        margin: 70px;
+    }
+}
+@media(max-width: 450px){
+    .formulario-contacto{
+        width: 100%;
+        @include flexColumn;
+        margin: 0; 
+        form{
+            width: 250px;
+        }
+    }
+    .atencion-contacto{
+        height: max-content;
+    } 
+}
+@media(max-width: 990px){
+    .main-contacto{
+        height: 220vh;
+    }
+}
