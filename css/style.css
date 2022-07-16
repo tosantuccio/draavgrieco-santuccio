@@ -77,10 +77,11 @@ ul li .nav-link:hover {
 }
 
 .portada {
-  height: 50vh;
+  height: 40vh;
   display: flex;
   margin: 5px;
   align-items: center;
+  justify-content: center;
 }
 .portada h1 {
   text-align: center;
@@ -96,11 +97,17 @@ ul li .nav-link:hover {
   color: #0a0272;
   font-size: 1rem;
   margin-top: auto;
-  padding: 20px;
+  padding: 15px;
+}
+.portada img {
+  float: right;
+  padding-left: 15px;
+  width: 250px;
+  height: 250px;
 }
 
 .prepagas {
-  margin-top: 150px;
+  margin-top: 200px;
   padding: 60px;
   text-align: center;
 }
@@ -131,7 +138,7 @@ ul li .nav-link:hover {
 }
 @media (max-width: 450px) {
   .prepagas {
-    margin-top: 550px;
+    margin-top: 500px;
   }
 }
 .main-info {
@@ -167,7 +174,7 @@ ul li .nav-link:hover {
 }
 
 .primera-consulta {
-  background-color: #2196f3;
+  background-color: rgba(3, 84, 138, 0.7725490196);
   color: white;
   padding: 20px;
   width: auto;
@@ -178,6 +185,9 @@ ul li .nav-link:hover {
 .primera-consulta p {
   margin: 20px;
   text-align: justify;
+}
+.primera-consulta div {
+  color: black;
 }
 
 @media (max-width: 450px) {
@@ -225,7 +235,7 @@ ul li .nav-link:hover {
   padding: 10px;
   color: white;
 }
-.atencion-contacto h1 {
+.atencion-contacto h2 {
   color: white;
   text-align: center;
   margin-top: 20px;
@@ -330,6 +340,7 @@ ul li .nav-link:hover {
 .main-turnos h1 {
   text-align: center;
   color: #2196f3;
+  padding: 20px;
 }
 
 #turnos h5 {

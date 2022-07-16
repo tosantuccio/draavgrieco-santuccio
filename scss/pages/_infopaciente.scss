@@ -26,7 +26,7 @@
     }      
 }
 .primera-consulta{
-    background-color: $color-principal;
+    background-color: #03548ac5;
     color: white;
     padding: 20px;
     width: auto;
@@ -36,6 +36,9 @@
     p{
         margin: 20px;
         text-align: justify;
+    }
+    div{
+        color: black;
     }
 }
 @media(max-width: 450px){

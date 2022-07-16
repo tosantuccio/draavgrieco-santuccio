@@ -292,45 +292,6 @@ header img{
 #turnos div{
     padding: 20px;
 }
-/* .consulta{
-    background-color: #2195f365;
-    width: 220px;
-    padding: 20px;
-    border: 2px solid #2196f3;
-    border-radius: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 425px;
-    margin-top: 5px;
-    transition-duration: 250ms;
-}
-.consulta h3{
-    text-align: center;
-}
-.consulta img{
-    width: 100%;
-    height: 150px;
-}
-.consulta p{    
-    margin-block: 15px;
-}
-.consulta a{
-    display: inline-block;
-    text-decoration: none;
-    border: solid 3px black;
-    padding: 3px 5px;  
-    background-color: #2196f3;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-}
-.consulta a:hover{
-    background-color: rgba(255, 235, 205, 0.308);
-}
-.consulta:hover{
-    transform: scale(1.1);
-} */
 #turnos div iframe{
     width:max-content;
 
