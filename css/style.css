@@ -198,7 +198,7 @@ ul li .nav-link:hover {
     width: 100%;
   }
   .formulario form {
-    height: 850px;
+    height: 865px;
   }
 }
 .main-contacto {
@@ -261,7 +261,7 @@ ul li .nav-link:hover {
 }
 @media (max-width: 990px) {
   .main-contacto {
-    height: 220vh;
+    height: auto;
   }
 }
 .titulo {
