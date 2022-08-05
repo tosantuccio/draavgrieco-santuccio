@@ -13,104 +13,104 @@
     <title>Info Pacientes | Dra. Andrea V. Grieco</title>
 </head>
 <body>
-    <header class="header-info">
-        <img src="../assets/img/etetoscopio.logo.png" alt="etetoscopio.logo">
-        <nav class="navbar navbar-expand-lg bg-light">
-         <div class="container-fluid"> 
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./calendario.html">Calendario de Vacunación</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./turnos.html">Turnos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
-         </div>
-        </nav>
-    </header>
-    <main class="main-info">
-        <div>
-            <h1><strong>Formulario Nuevo Paciente</strong></h1>
+<header class="header-info">
+    <img src="../assets/img/etetoscopio.logo.png" alt="etetoscopio.logo">
+    <nav class="navbar" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./calendario.html">Calendario de Vacunación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./turnos.html">Turnos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>  
+</header>
+<main class="main-info">
+  <div>
+    <h1><strong>Formulario Nuevo Paciente</strong></h1>
+  </div>
+  <div class="row container-fluid">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario" data-aos="zoom-in-right">          
+      <form>
+        <div class="mb-3">
+          <label for="campo-nombre" class="form-label">Nombre y Apellido:</label>
+            <input type="text" class="form-control" id="campo-nombre" placeholder="Nombre y apellido" required>
         </div>
-        <div class="row container-fluid">
-         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario" data-aos="zoom-in-right">          
-            <form>
-                <div class="mb-3">
-                    <label for="campo-nombre" class="form-label">Nombre y Apellido:</label>
-                    <input type="text" class="form-control" id="campo-nombre" placeholder="Nombre y apellido" required>
-                </div>
-                <div class="mb-3">
-                    <label for="campo-nacimiento" class="form-label">Fecha de Nacimiento:</label>
-                    <input type="date" class="form-control" id="campo-nacimiento" placeholder="Fecha de Nacimiento" required>
-                </div>
-                <div class="mb-3">
-                    <label for="campo-nombre" class="form-label">Dirección:</label>
-                    <input type="text" class="form-control" id="campo-dirección" placeholder="Dirección" required>
-                </div>
-                <div>
-                    <label for="campo-cobertura">Cobertura/Obra Social</label>                 
-                    <select class="form-select" name="cobertura">
-                        <option value="osde">Osde</option>
-                        <option value="medicus">Medicus</option>
-                        <option value="omint">Omint</option>
-                        <option value="hope">Wiliam Hope</option>
-                        <option value="particular">Particular</option>                    
-                    </select>                         
-                </div>
-                <div class="mb-3">
-                    <label for="campo-nombre--mp" class="form-label">Nombre Mamá/Papá:</label>
-                    <input type="text" class="form-control" id="campo-nombre--mp">
-                </div>
-                <div class="mb-3">
-                    <label for="campo-telefono" class="form-label">Teléfono:</label>
-                    <input type="tel" class="form-control" id="campo-telefono" placeholder="Tel/Cel" required>
-                </div>
-                <div>
-                    <label for="campo-antecedentes">Antecedentes/Internaciones previas:</label>
-                    <textarea name="Antecedentes" id="campo-antecedentes" cols="60" rows="2"></textarea>
-                </div>
-                <div>
-                    <label for="campo-comentarios">Comentarios</label>
-                    <textarea name="Comentarios" id="campo-comentarios" cols="60" rows="2"></textarea>
-                </div>
-                <a href="#" class="btn botonEnviar">Enviar</a>
-                <a href="#" class="btn botonLimpiar">Limpiar</a>
-            </form>
-         </div>
-         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" data-aos="zoom-in-left">
-          <article class="primera-consulta">
-            <h3>La Primera Consulta</h3>
-            <p><small>Una vez que el bebé es dado de alta y ya está en su hogar, los padres deben programar con el pediatra su primera visita al consultorio, que suele realizarse entre el 4º y 7º día de vida.
-            <br>
-            <br>     
-            En ella, el médico verifica los datos proporcionados por el servicio de neonatología del hospital o maternidad donde nació el bebé y corrobora que coincidan con lo que ve en el recién nacido a partir de una serie de revisaciones físicas:
-            <br>
-            <br> 
-            <p class="text-center">
-            -Se verifica el ritmo cardíaco; el peso y la medida del bebé así como también el peso, la longitud y el perímetro de su cabeza. <br>
-            <br>
-            -Se palpa la fontanela (espacio blando que está en el cráneo antes de formarse el hueso) <br>
-            <br>
-            -Se revisan las extremidades, los genitales, la morfología de la boca y los oídos, para constatar que no presenten complejidades o alteraciones. <br>
-            <br>
-            -Se revisa también el ombligo, indicándole a los padres cómo deben aplicar el alcohol para que el cordón umbilical se seque correctamente. <br>
-            <br>  
-            -El pediatra observa además los reflejos del bebé, los movimientos de cadera y su columna. <br> 
-            <br> 
-            -Se revisa la mirada: algunos pediatras observan con una linterna el reflejo rojo del bebé (estudio que luego profundiza el oftalmólogo).
-            </p> 
-            <br>
-            <br>  
-            En esta primera visita, los aspectos físicos son muy importantes, sin embargo, el pediatra también está atento a otros puntos que tienen que ver con el ritmo de alimentación del bebé, su rutina de sueño, el llanto y otros comportamientos. Para esto, los papás tienen que asistir al consultorio con toda la información posible y todas las dudas que consideren necesario despejar, ya que son ellos los primeros en observar al bebé y los encargados de transmitirle cada detalle al médico.
-            <br>
-            <br>  
-            Las vacunas, la lactancia y la prevención de accidentes, son otros de los temas que se tratan en esta primera consulta que sirve para tranquilizar a los papás, quienes también pueden volcar en ella todos sus miedos e incertidumbres acerca de la crianza de su bebé.
+        <div class="mb-3">
+          <label for="campo-nacimiento" class="form-label">Fecha de Nacimiento:</label>
+            <input type="date" class="form-control" id="campo-nacimiento" placeholder="Fecha de Nacimiento" required>
+        </div>
+        <div class="mb-3">
+          <label for="campo-nombre" class="form-label">Dirección:</label>
+          <input type="text" class="form-control" id="campo-dirección" placeholder="Dirección" required>
+        </div>
+        <div>
+          <label for="campo-cobertura">Cobertura/Obra Social</label>                 
+          <select class="form-select" name="cobertura">
+            <option value="osde">Osde</option>
+            <option value="medicus">Medicus</option>
+            <option value="omint">Omint</option>
+            <option value="hope">Wiliam Hope</option>
+            <option value="particular">Particular</option>                    
+          </select>                         
+        </div>
+        <div class="mb-3">
+          <label for="campo-nombre--mp" class="form-label">Nombre Mamá/Papá:</label>
+          <input type="text" class="form-control" id="campo-nombre--mp">
+        </div>
+        <div class="mb-3">
+          <label for="campo-telefono" class="form-label">Teléfono:</label>
+          <input type="tel" class="form-control" id="campo-telefono" placeholder="Tel/Cel" required>
+        </div>
+        <div>
+          <label for="campo-antecedentes">Antecedentes/Internaciones previas:</label>
+          <textarea name="Antecedentes" id="campo-antecedentes" cols="60" rows="2"></textarea>
+        </div>
+        <div>
+          <label for="campo-comentarios">Comentarios</label>
+          <textarea name="Comentarios" id="campo-comentarios" cols="60" rows="2"></textarea>
+        </div>
+          <a href="#" class="btn botonEnviar">Enviar</a>
+          <a href="#" class="btn botonLimpiar">Limpiar</a>
+      </form>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" data-aos="zoom-in-left">
+      <article class="primera-consulta">
+        <h3>La Primera Consulta</h3>
+          <p><small>Una vez que el bebé es dado de alta y ya está en su hogar, los padres deben programar con el pediatra su primera visita al consultorio, que suele realizarse entre el 4º y 7º día de vida.
+          <br>
+          <br>     
+          En ella, el médico verifica los datos proporcionados por el servicio de neonatología del hospital o maternidad donde nació el bebé y corrobora que coincidan con lo que ve en el recién nacido a partir de una serie de revisaciones físicas:
+          <br>
+          <br> 
+          <p class="text-center">
+          -Se verifica el ritmo cardíaco; el peso y la medida del bebé así como también el peso, la longitud y el perímetro de su cabeza. <br>
+          <br>
+          -Se palpa la fontanela (espacio blando que está en el cráneo antes de formarse el hueso) <br>
+          <br>
+          -Se revisan las extremidades, los genitales, la morfología de la boca y los oídos, para constatar que no presenten complejidades o alteraciones. <br>
+          <br>
+          -Se revisa también el ombligo, indicándole a los padres cómo deben aplicar el alcohol para que el cordón umbilical se seque correctamente. <br>
+          <br>  
+          -El pediatra observa además los reflejos del bebé, los movimientos de cadera y su columna. <br> 
+          <br> 
+          -Se revisa la mirada: algunos pediatras observan con una linterna el reflejo rojo del bebé (estudio que luego profundiza el oftalmólogo).
+          </p> 
+          <br>
+          <br>  
+          En esta primera visita, los aspectos físicos son muy importantes, sin embargo, el pediatra también está atento a otros puntos que tienen que ver con el ritmo de alimentación del bebé, su rutina de sueño, el llanto y otros comportamientos. Para esto, los papás tienen que asistir al consultorio con toda la información posible y todas las dudas que consideren necesario despejar, ya que son ellos los primeros en observar al bebé y los encargados de transmitirle cada detalle al médico.
+          <br>
+          <br>  
+          Las vacunas, la lactancia y la prevención de accidentes, son otros de los temas que se tratan en esta primera consulta que sirve para tranquilizar a los papás, quienes también pueden volcar en ella todos sus miedos e incertidumbres acerca de la crianza de su bebé.
           </small></p>
           <div class="alert alert-warning" role="alert">
             Presentarse con DNI, Credencial Obra social/Prepaga. 
@@ -118,26 +118,26 @@
           <div class="alert alert-success" role="alert">
             Respetar horario de turno asignado previamente.
           </div>
-          </article>
-         </div>
-        </div> 
-    </main>
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-            </a>
-            <span class="text-muted">&copy; 2022 Dra. Andrea V. Grieco</span>
-          </div>
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a href="https://www.instagram.com/" target="_blank" ><img src="../assets/img/icons8-instagram-48.png" target="_blank" alt="logo-instagram"></a></li>
-            <li class="ms-3"><a href="https://es-la.facebook.com/" target="_blank"> <img src="../assets/img/icons8-facebook-48.png" alt="logo-facebook"></a></li>
-          </ul>
-        </footer>
+      </article>
+    </div>
+  </div> 
+</main>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+          <span class="text-muted">&copy; 2022 Dra. Andrea V. Grieco</span>
       </div>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>AOS.init();</script>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a href="https://www.instagram.com/" target="_blank" ><img src="../assets/img/icons8-instagram-48.png" target="_blank" alt="logo-instagram"></a></li>
+          <li class="ms-3"><a href="https://es-la.facebook.com/" target="_blank"> <img src="../assets/img/icons8-facebook-48.png" alt="logo-facebook"></a></li>
+        </ul>
+    </footer>
+  </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="./js/bootstrap.js"></script>       
 </body>
 </html>
